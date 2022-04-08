@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    Mostrando info del departamento num   {{$id}}
-</body>
-</html>
+@extends('layout')
+
+@section('principal')
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">  {{ $departamento->name }} </h5>
+
+        </div>
+    </div>
+
+@endsection
